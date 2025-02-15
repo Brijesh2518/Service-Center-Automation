@@ -36,7 +36,7 @@ def register(request):
         obj = User()
         obj.phone=phone
         obj.password=password
-        obj.name=name
+        obj.name=name,
         obj.email=email
         obj.pic=pic
         obj.address=address
@@ -62,7 +62,6 @@ def login(request):
     else:
         return render(request, 'user/login.html')
     
-
 
 
 def booking(request, phone):

@@ -42,8 +42,6 @@ class Booking(models.Model):
         ordering = ['-created']
 
 
-
-
 class Feedback(models.Model):
     booking = models.ForeignKey(Booking, on_delete=models.DO_NOTHING)
     rating = models.CharField(max_length=10, default="★★★★★")
